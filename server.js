@@ -12,7 +12,7 @@ app.use(express.json());
 // ── Routes ─────────────────────────────────────────────
 app.use("/api/candidates", require("./routes/candidateRoutes"));
 app.use("/api/jobs",       require("./routes/jobRoutes"));
-app.use("/api/resumes",    require("./routes/resumeRoutes"));
+app.use("/api/resumes", require("./routes/resumeRoutes"));
 
 // ── Health check ───────────────────────────────────────
 app.get("/", (req, res) => {
